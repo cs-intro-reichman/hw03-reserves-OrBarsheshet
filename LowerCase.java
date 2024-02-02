@@ -10,8 +10,17 @@ public class LowerCase {
     * except that all the upper-case letters are converted to lower-case letters.
     * Non-letter characters are left as is.
     */
-    public static String lowerCase(String s) {
-        // Replace the following statement with your code
-        return null;
+    public static String lowerCase(String str) {
+        String lowerCaseStr= "";
+        for (int i=0; i < str.length(); i++){
+            if ((str.charAt(i) >= 'A' && str.charAt(i) <= 'Z')){
+                lowerCaseStr = lowerCaseStr + (char)(str.charAt(i)+ 32); 
+            }
+            //how to get rid of the null? and what is the , in the terminal  
+            else{
+                lowerCaseStr  = lowerCaseStr + (char) str.charAt(i);
+            }
+        }
+        return lowerCaseStr;
     }
 }
